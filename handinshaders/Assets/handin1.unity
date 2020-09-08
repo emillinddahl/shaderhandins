@@ -243,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162711562}
   m_LocalRotation: {x: 0.13352868, y: -0, z: -0, w: 0.991045}
-  m_LocalPosition: {x: 1.35, y: 0.89, z: -14}
+  m_LocalPosition: {x: 1.35, y: 1.02, z: -2.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -661,7 +661,7 @@ Transform:
   m_GameObject: {fileID: 1350131484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2, y: 2, z: 2}
-  m_LocalScale: {x: 8.134193, y: 8.134193, z: 8.134193}
+  m_LocalScale: {x: 6.799047, y: 6.799047, z: 6.799047}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube: {fileID: 3104654044340937884, guid: d13e3cf15abcabd44b4756de403f01b7, type: 3}
   mega: []
-  borgCubeAmount: 5
+  borgCubeAmount: 20
 --- !u!4 &1955279019
 Transform:
   m_ObjectHideFlags: 0

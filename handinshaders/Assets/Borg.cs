@@ -9,7 +9,7 @@ public class Borg : MonoBehaviour
     public GameObject[] mega;
 
     //change shit up
-    public float borgCubeAmount = 10;
+    public float borgCubeAmount = 20;
     //three dimensional array and put cubes in there - hmm
 
     // Start is called before the first frame update
@@ -18,9 +18,6 @@ public class Borg : MonoBehaviour
 
         for (int z = 0; z < borgCubeAmount; z++) { 
         
-
-
-
             for (int y = 0; y < borgCubeAmount; y++) {
 
                 for (int x = 0; x < borgCubeAmount; x++)
@@ -28,7 +25,7 @@ public class Borg : MonoBehaviour
 
                     //GameObject theNewestCube = Instantiate(cube, transform.position + new Vector3(x - 20, 0, 0), Quaternion.identity) as GameObject;
                     //GameObject theNewestCube = Instantiate(cube, new Vector3((x - 5) / 8f, (y - 5) / 8f, (z - 5) / 8f), transform.rotation) as GameObject;
-                    GameObject theNewestCube = Instantiate(cube, new Vector3((x - 5) / 8f, (y - 5) / 8f, (z - 5) / 8f), transform.rotation) as GameObject;
+                    GameObject theNewestCube = Instantiate(cube, new Vector3((x - borgCubeAmount) / 8f, (y - borgCubeAmount) / 8f, (z - borgCubeAmount) / 8f), transform.rotation) as GameObject;
 
                     // color is given in RGB
                     theNewestCube.GetComponent<Renderer>().material.color = new Color(x / borgCubeAmount, y/borgCubeAmount, z / borgCubeAmount);
