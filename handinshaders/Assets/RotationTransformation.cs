@@ -6,6 +6,8 @@ public class RotationTransformation : Transformation
 {
 
     public Vector3 rotation;
+	public Vector3 rotationSpeed;
+	public bool rotate;
 
     public override Vector3 Apply (Vector3 point)
     {
@@ -47,6 +49,11 @@ public class RotationTransformation : Transformation
     // Update is called once per frame
     void Update()
     {
+		if (rotate)
+        {
+			rotation += rotationSpeed;
+        }
+
         
     }
 }

@@ -5,6 +5,11 @@ using UnityEngine;
 public class PositionTransformation : Transformation
 {
 
+    public float radius;
+    public float speed;
+    public bool doOrbit;
+
+
     public Vector3 position;
 
 
@@ -15,15 +20,21 @@ public class PositionTransformation : Transformation
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+ 
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (doOrbit)
+        {
+            position.x = radius * Mathf.Sin(Time.time * speed);
+            position.z = radius * Mathf.Cos(Time.time * speed);
+        }
+            
+
+        //math equations - make point move in circle
+
+
+
     }
 }
